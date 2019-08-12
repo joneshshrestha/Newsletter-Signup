@@ -1,0 +1,22 @@
+{
+  "name": "newsletter-signup",
+  "version": "1.0.0",
+  "description": "Newsletter signup",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joneshshrestha/Newsletter-Signup.git"
+  },
+  "keywords": [
+    "webapp"
+  ],
+  "author": "Jonesh Shrestha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joneshshrestha/Newsletter-Signup/issues"
+  },
+  "homepage": "https://github.com/joneshshrestha/Newsletter-Signup#readme"
+}
