@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Floating labels example · Bootstrap</title>
+    <title>Newsletter Signup</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/floating-labels/">
 
@@ -37,27 +37,26 @@
   <body>
     <form class="form-signin">
   <div class="text-center mb-4">
-    <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-    <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
-    <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
+    <img class="mb-4" src="images/newsletter.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">Signup to my Newsletter!</h1>
   </div>
 
   <div class="form-label-group">
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputEmail">Email address</label>
+    <input type="text" class="form-control" placeholder="First Name" required autofocus>
+    <label for="inputEmail">First Name</label>
   </div>
 
   <div class="form-label-group">
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <label for="inputPassword">Password</label>
+    <input type="text" class="form-control" placeholder="Last Name" required>
+    <label for="inputEmail">Last Name</label>
   </div>
 
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Remember me
-    </label>
+  <div class="form-label-group">
+    <input type="email" class="form-control" placeholder="Email" required>
+    <label for="inputEmail">Email</label>
   </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
   <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2019</p>
 </form>
 </body>
