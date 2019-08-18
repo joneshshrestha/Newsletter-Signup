@@ -20,12 +20,24 @@ app.post('/', function(req, res){
 
     console.log(firstName, lastName, email)
 
+    let data = {
+        members:[
+            {
+            email_address: email,
+            status: 'subscribed' 
+            }
+        ]
+    }
+
+    let jsonData = JSON.stringify(data)
+
     let option = {
         url: 'https://us3.api.mailchimp.com/3.0/lists/f68a58c0cf',
         method: 'POST',
         headers: {
             'Authorization': 'Jonesh b8f9e122cea0c5e6ad7605807087a8a2-us3'
-        }
+        },
+        body: jsonData
     }
 
     request(option, function(error, response, body) {
