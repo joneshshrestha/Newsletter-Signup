@@ -1,4 +1,8 @@
+const config = require('./config')
+
 //jshint esversion: 6
+let API = config.API_KEY;
+let KEY = config.SECRET_KEY;
 
 let express = require('express')
 let request = require('request')
@@ -36,10 +40,10 @@ app.post('/', function(req, res){
     let jsonData = JSON.stringify(data)
 
     let option = {
-        url: 'https://us3.api.mailchimp.com/3.0/lists/f68a58c0cf',
+        url: 'https://us3.api.mailchimp.com/3.0/lists/' + KEY,
         method: 'POST',
         headers: {
-            'Authorization': 'Jonesh b8f9e122cea0c5e6ad7605807087a8a2-us3'
+            'Authorization': 'Jonesh ' + API
         },
         body: jsonData
     }
@@ -57,9 +61,3 @@ app.post('/', function(req, res){
 app.listen(3001, function(){
     console.log("Listening at PORT 3000")
 })
-
-
-
-//API KEY
-//b8f9e122cea0c5e6ad7605807087a8a2-us3
-//f68a58c0cf
