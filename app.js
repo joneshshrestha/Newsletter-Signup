@@ -45,17 +45,17 @@ app.post('/', function(req, res){
         headers: {
             'Authorization': 'Jonesh ' + API
         },
-        // body: jsonData
+        body: jsonData
     }
 
     request(option, function(error, response, body) {
         if(error) {
-            res.send('There was an error with signing up, please try again!')
+            res.sendFile(__dirname + '/failure.html')
         } else {
             if(response.statusCode === 200) {
-                res.send('Successfully subscribed!')
+                res.sendFile(__dirname + '/success.html')
             } else {
-            res.send('There was an error with signing up, please try again!')
+                res.sendFile(__dirname + '/failure.html')
         }
     }
     })
