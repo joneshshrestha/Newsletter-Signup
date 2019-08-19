@@ -45,7 +45,7 @@ app.post('/', function(req, res){
         headers: {
             'Authorization': 'Jonesh ' + API
         },
-        body: jsonData
+        // body: jsonData
     }
 
     request(option, function(error, response, body) {
