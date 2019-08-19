@@ -61,6 +61,10 @@ app.post('/', function(req, res){
     })
 })
 
+app.post('/success', function(req, res){
+    res.redirect('/')
+})
+
 
 app.listen(3001, function(){
     console.log("Listening at PORT 3000")
