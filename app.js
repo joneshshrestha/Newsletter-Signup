@@ -50,10 +50,14 @@ app.post('/', function(req, res){
 
     request(option, function(error, response, body) {
         if(error) {
-            console.log(error)
+            res.send('There was an error with signing up, please try again!')
         } else {
-            console.log(response.statusCode)
+            if(response.statusCode === 200) {
+                res.send('Successfully subscribed!')
+            } else {
+            res.send('There was an error with signing up, please try again!')
         }
+    }
     })
 })
 
