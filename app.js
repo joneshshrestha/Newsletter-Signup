@@ -45,7 +45,7 @@ app.post('/', function(req, res){
         headers: {
             'Authorization': 'Jonesh ' + API
         },
-        // body: jsonData
+        body: jsonData
     }
 
     request(option, function(error, response, body) {
@@ -66,6 +66,6 @@ app.post('/failure', function(req, res){
 })
 
 
-app.listen(3001, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("Listening at PORT 3000")
 })
