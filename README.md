@@ -10,5 +10,6 @@ let config = {
     API_KEY : '...',
     SECRET_KEY : '...'
   }
-```
+  
 module.exports = config;
+```
