@@ -5,9 +5,10 @@
 
 Create a config.js file:
 **touch config.js**
+```
 let config = {
     API_KEY : '...',
     SECRET_KEY : '...'
   }
-
+```
 module.exports = config;
